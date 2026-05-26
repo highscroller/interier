@@ -1,0 +1,201 @@
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+
+    &__content {
+        grid-column: span 8;
+        margin-right: 32px;
+    }
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &__item {
+        border-top: 0.5px solid #cacdd8;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__item input {
+        width: 70px;
+        height: 50px;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        font: inherit;
+        background-color: $light-gray;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__images {
+        width: 173px;
+        height: 173px;
+    }
+
+    &__info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &__info-text {
+        color: $text-gray;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__sum {
+        font-size: 16px;
+    }
+
+    &__link-box {
+        color: $text-black;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: underline;
+        color: $text-black;
+        margin-right: 30px;
+    }
+
+    &__link-box:hover {
+        text-decoration: none;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 7px;
+        padding-top: 18px;
+    }
+    
+    &__actions button {
+        width: 200px;
+        height: 37px;
+    
+        border-radius: 20px;
+        border: 1px solid #000;
+        background: transparent;
+    
+        cursor: pointer;
+    }
+
+    &__actions-link {
+        width: 200px;
+        height: 37px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        background: transparent;
+        color: $text-black;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    &__buttons {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    &__form {
+        background: #f7f6f6;
+        border-radius: 20px;
+        height: 514px;
+        grid-column: 4 span;
+        padding: 42px 28px;
+    }
+
+    &__form-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__form-title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 42px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 64px;
+    }
+    
+    &__inputs input {
+        border: none;
+        border-bottom: 1px solid #cacdd8;
+        background: transparent;
+        padding: 8px 0;
+        outline: none;
+    }
+    
+    &__total {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: 18px;
+        gap: 10px;
+    }
+
+    &__total-text {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: 18px;
+        gap: 10px;
+    }
+
+    &__total-sum {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: 18px;
+        gap: 10px;
+        font-weight: 500;
+    }
+
+    &__submit {
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+
+.cart-topbar {
+    margin-top: 64px;
+}

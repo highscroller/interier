@@ -1,0 +1,220 @@
+@media (max-width: 1024px) {
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .l-center {
+        width: 100%;
+        max-width: 834px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        box-sizing: border-box;
+    }
+
+    .header,
+    .catalog-topbar,
+    .furniture,
+    .products {
+        width: 100%;
+    }
+
+    .first-page {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .first-page__heading {
+        width: 760px;
+        max-width: 100%;
+    }
+
+    .first-page__heading.l-center {
+        width: 100%;
+        max-width: 834px;
+    }
+
+    .header {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: none;
+        row-gap: 0;
+        border-bottom: none;
+        position: relative;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header::after {
+        content: "";
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        bottom: 0;
+    }
+
+    .header__link {
+        width: auto;
+        gap: 32px;
+    }
+
+    .header__search {
+        width: 288px;
+        max-width: 100%;
+    }
+
+    .articles {
+        gap: 24px;
+    }
+
+    .article {
+        height: 268px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article__text,
+    .article__textwork {
+        padding-top: 0;
+    }
+
+    .filter-form {
+        right: calc(25px - (((100vw - min(834px, 100vw)) / 2) + 258px));
+    }
+
+    .catalog-topbar {
+        grid-template-columns: 1fr auto;
+        margin: 32px auto;
+        gap: 24px;
+    }
+
+    .catalog-topbar__breadcrumb,
+    .catalog-topbar__actions {
+        grid-column: auto / auto;
+    }
+
+    .catalog-topbar__actions {
+        width: 420px;
+        max-width: 100%;
+        justify-self: end;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalog-topbar__btn {
+        width: auto;
+        padding: 0 22px;
+    }
+
+    .catalog-topbar__content {
+        width: auto;
+        justify-content: center;
+    }
+
+    .cart {
+        max-width: 834px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }
+
+    .cart__content {
+        grid-column: 1 / -1;
+        min-width: 0;
+    }
+
+    .cart__form {
+        grid-column: 1 / -1;
+        width: 376px;
+    }
+
+    .cart__left {
+        min-width: 0;
+    }
+
+    .cart__left img {
+        width: 173px;
+        max-width: 40%;
+        height: auto;
+    }
+
+    .cart__info {
+        min-width: 0;
+    }
+
+    .cart__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 64px;
+    }
+
+    .cart__actions button {
+        flex: 0 0 auto;
+        width: 180px;
+        height: 37px;
+    }
+
+    .cart__actions-link {
+        flex: 0 0 auto;
+        width: 200px;
+        height: 37px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px 24px;
+    }
+
+    .section-link {
+        display: block;
+        width: 100%;
+        padding-bottom: 64px;
+    }
+
+    .footer {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 32px;
+        padding-left: max(24px, calc(50% - 393px));
+        padding-right: max(24px, calc(50% - 393px));
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .footer__logo,
+    .footer__menu,
+    .footer__contacts,
+    .footer__subscription {
+        grid-column: auto;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .footer__logo {
+        display: none;
+    }
+
+    .footer__subscription {
+        justify-self: auto;
+    }
+}

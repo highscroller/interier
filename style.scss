@@ -1,0 +1,518 @@
+@import 'vars';
+@import 'header-cart';
+@import 'landing';
+
+* {
+    margin: 0;
+    padding: 0;
+    // color: $text-white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-decoration-line: none;
+}
+
+.l-center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.body {
+    margin: 0 auto;
+}
+
+.first-page {
+    width: 100%;
+    height: 735px;
+    background-image: url(./img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: $text-white;
+    margin-bottom: 64px;
+
+    &--catalog {
+        height: 400px;
+        background-image: url(./img/catalog.png);
+    }
+
+    &--cart {
+        height: 400px;
+        background-image: url(./img/cart.png);
+    }
+
+    &__heading {
+        width: 760px;
+        color: $text-white;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        padding-top: 64px;
+        padding-bottom: 16px;
+    }
+    
+    &__paragraph {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+    
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: underline;
+        color: $text-white;
+    }
+    
+    &__link:hover {
+        text-decoration: none;
+    }
+}
+
+.header {
+    margin: auto;
+    padding-top: 16px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 16px 0px 16px 0px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+
+    &__logo {
+        color: $text-white;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__search {
+        background: none;
+        width: 288px;
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding-left: 32px;
+        padding-right: 32px;
+        justify-self: center;
+    }
+
+    &__search::placeholder {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        color: $text-white;
+        justify-self: center;
+    }
+
+    &__link {
+        width: auto;
+        min-width: 0;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        display: flex;
+        gap: 32px;
+        justify-self: end;
+        align-items: center;
+    }
+
+    &--link {
+        color: $text-white;
+    }
+
+    &--link:hover {
+        text-decoration: underline;
+    }
+
+    &__actions {
+        display: none;
+    }
+}
+
+.catalog-topbar {
+    margin-top: 64px;
+}
+
+.cart-topbar {
+    margin-top: 64px;
+}
+
+.catalog-topbar {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    margin: 32px auto;
+
+    &__breadcrumb {
+        color: $text-black;
+        grid-column: 1 / span 6;
+        justify-self: start;
+        gap: 10px;
+    }
+    
+    &__breadcrumb span {
+        color: $text-black;
+        margin: 0 10px;
+    }
+    
+    &__breadcrumbs {
+        color: $text-black;
+    }
+    
+    &__breadcrumbs:hover {
+        color: $text-black;
+        text-decoration: underline;
+    }
+    
+    &__actions {
+        width: 420px;
+        grid-column: 7 / span 6;
+        justify-self: end;
+    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        color: $text-black;
+    }
+    
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 40px;
+        padding: 0 22px;
+    
+        border-radius: 20px;
+        border: 1px solid rgba(196, 196, 196, 1);
+        background: #fff;
+        color: $text-black;
+    }
+    
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $text-black;
+        align-items: center;
+    }
+
+    &__content-arrow {
+        width: 20px;
+        height: 11px;
+    }
+    
+    &__select {
+        border: none;
+        outline: none;
+        background: transparent;
+        font: inherit;
+        appearance: none;
+        color: $text-black;
+    }
+}
+
+.furniture {
+    width: 1200px;
+    margin-bottom: 64px;
+}
+
+.section-header {
+    width: 100%;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: $text-black;
+    margin-bottom: 32px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 64px;
+    gap: 32px;
+}
+
+.article {
+    height: 415px;
+
+    &--chill {
+        grid-column: span 6;
+        background-image: url(./img/article_chill.jpg);
+    }
+    
+    &--work {
+        grid-column: span 6;
+        background-image: url(./img/article_work.jpg);
+    }
+    
+    &--kitchen {
+        grid-column: span 4;
+        background-image: url(./img/article_kitchen.jpg);
+    }
+    
+    &--children {
+        grid-column: span 4;
+        background-image: url(./img/article_children.jpg);
+    }
+    
+    &--bathroom {
+        grid-column: span 4;
+        background-image: url(./img/article_bathroom.jpg);
+    }
+    
+    &__text {
+        color: $text-white;
+        font-family: Montserrat;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding-top: 188px;
+    }
+    
+    &__textwork {
+        padding-top: 166px;
+    }
+}
+
+.products {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px 32px;
+    margin-bottom: 32px;
+}
+
+.products > .section__header {
+    grid-column: 1 / -1;
+}
+
+.product {
+    width: 100%;
+
+    &__image {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    
+    &__heading {
+        color: $text-black;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    &__paragraph {
+        color: $text-gray;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+    
+    &__prices {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__discprice {
+        color: $text-black;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-right: 32px;
+    }
+    
+    &__price {
+        color: $text-gray;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: line-through;
+    }
+}
+
+.section-link {
+    color: $text-black;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+}
+
+.section-link:hover {
+    text-decoration: none;
+}
+
+.footer {
+    height: 207px;
+    background: rgba(247, 246, 246, 1);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: start;
+    margin-top: 64px;
+
+    &__logo {
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-top: 32px;
+        grid-column: 1 / span 4;
+        justify-self: start;
+        margin-right: 0;
+    }
+    
+    &__menu {
+        grid-column: 5 / span 2;
+        justify-self: start;
+        margin-right: 0;
+        padding-top: 32px;
+    }
+    
+    &__menu a {
+        display: block;
+    }
+    
+    &__heading {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $text-black;
+        margin-bottom: 12px;
+    }
+    
+    &__contacts {
+        grid-column: 7 / span 2;
+        justify-self: start;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $text-black;
+        padding-top: 32px;
+    }
+    
+    &__contacts a {
+        display: block;
+    }
+    
+    &__links {
+        color: $text-gray;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 12px;
+    }
+    
+    &__icons {
+        width: 104px;
+        height: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding-top: 12px;
+    }
+    
+    &__subscription {
+        display: grid;
+        grid-column: 9 / span 4;
+        justify-self: end;
+        margin-left: 0;
+        padding-top: 32px;
+    }
+    
+    &__text {
+        color: $text-black;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+
+        margin-bottom: 8px;
+    }
+    
+    &__input {
+        width: 260px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 1px solid rgba(196, 196, 196, 1);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 1);
+        margin-bottom: 8px;
+    }
+    
+    &__input::placeholder {
+        padding-left: 17px;
+        padding-right: 17px;
+        color: $text-gray;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    
+    &__button {
+        width: 260px;
+        height: 40px;
+        border-radius: 16px;
+        border-color: transparent;
+        background: rgba(222, 215, 215, 0.41);
+        color: $text-black;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+}
+
+.links:hover, .catalog_link:hover, .footer__links:hover, .footer__icon:hover {
+    text-decoration: underline;
+}
+
+@import 'cart';
+@import 'filter';
+@import 'media-tablet';
+@import 'media-mobile';

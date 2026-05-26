@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100px;
+}
+
+.landing_header {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.coworking_heading {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 86px;
+    margin-bottom: 39px;
+}
+
+.p_10_text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 39px;
+}
+
+.signup_button {
+    border-radius: 6px;
+    width: 160px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ED4C5C;
+}
+
+.h3_heading {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.h2_heading {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 63px;
+}
+
+.h2_stay_focused {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 45px;
+}
+
+.h4_supports {
+    margin-top: 33px;
+    margin-bottom: 20px;
+}
+
+.p_7_text {
+    margin-bottom: 5px;
+}
+
+.p_20_text {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 14px;
+}
+
+.h2_contacts {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 53px;
+}
+
+.learn_more_link {
+    font-size: 14px;
+    line-height: 140%;
+    color: #ED4C5C;
+}
+
+.footer {
+    height: 110px;
+}
